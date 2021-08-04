@@ -28,12 +28,12 @@ public class UCroperActivity extends AppCompatActivity {
             UCrop.Options options = new UCrop.Options();
             options.setFreeStyleCropEnabled(true);
             options.setMaxScaleMultiplier((float) 150);
-            options.setToolbarTitle("Crop Image");
-            options.setToolbarColor(Color.parseColor("#179D7D"));
-            options.setToolbarWidgetColor(Color.parseColor("#FFFFFF"));
-            options.setActiveWidgetColor(Color.parseColor("#179D7D"));
-            options.setStatusBarColor(Color.parseColor("#189475"));
-            options.setActiveControlsWidgetColor(Color.parseColor("#179D7D"));
+            options.setToolbarTitle("裁剪");
+            options.setToolbarColor(Color.parseColor("#FFFFFF"));
+            options.setToolbarWidgetColor(Color.parseColor("#000000"));
+            options.setStatusBarColor(Color.parseColor("#FFFFFF"));
+            options.setActiveControlsWidgetColor(Color.parseColor("#1890FF"));
+            options.setLogoColor(Color.parseColor("#FFFFFF"));
             UCrop of = UCrop.of(sourceUri, Uri.fromFile(new File(getCacheDir(), file_name+"_temp.jpg")));
             of.withOptions(options);
             of.start(UCroperActivity.this, UCrop.REQUEST_CROP);
