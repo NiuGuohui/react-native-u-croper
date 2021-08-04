@@ -34,7 +34,7 @@ public class UCroperActivity extends AppCompatActivity {
             options.setStatusBarColor(Color.parseColor("#FFFFFF"));
             options.setActiveControlsWidgetColor(Color.parseColor("#1890FF"));
             options.setLogoColor(Color.parseColor("#FFFFFF"));
-            UCrop of = UCrop.of(sourceUri, Uri.fromFile(new File(getCacheDir(), file_name+"_temp.jpg")));
+            UCrop of = UCrop.of(sourceUri, Uri.fromFile(new File(getCacheDir(), file_name)));
             of.withOptions(options);
             of.start(UCroperActivity.this, UCrop.REQUEST_CROP);
         }catch (Exception e){
